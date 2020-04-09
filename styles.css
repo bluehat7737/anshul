@@ -101,7 +101,7 @@ nav {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #FFF;
+  background-color: #fff;
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.2s ease-in-out;
@@ -126,7 +126,6 @@ nav {
   width: 80%;
   margin: 0 auto;
 }
-
 
 .anshul img {
   width: 35vh;
@@ -165,6 +164,13 @@ nav {
 
 .name {
   color: #eb648c;
+}
+
+.skills {
+  border: 1px solid black;
+  border-radius: 20px;
+  margin-top: 1rem;
+  padding: 1rem;
 }
 
 .skill {
@@ -210,7 +216,6 @@ nav {
   flex-wrap: wrap;
 }
 
-
 .bs-icon {
   background-color: #563d7c;
   border-radius: 8px;
@@ -219,4 +224,79 @@ nav {
 .skill-svg {
   width: 30px;
   margin-right: 1.1rem;
+}
+
+.myEducation-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.edu-icon {
+  width: 40px;
+  filter: invert(17%) sepia(78%) saturate(3061%) hue-rotate(300deg)
+    brightness(104%) contrast(96%);
+}
+
+.edu-shelter {
+  margin-bottom: 2rem;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.edu-shelter h4 {
+  margin-left: 15px;
+}
+
+.edu-shelter-content-1 {
+  display: flex;
+  line-height: 40px;
+  margin-bottom: 12px;
+}
+
+.edu-shelter-content-2 {
+  margin-bottom: 10px;
+}
+
+/* services start here */
+
+.services-wrapper {
+  width: 80%;
+  margin: 1rem auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 24rem;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+}
+
+.card img {
+  width: 150px;
+}
+
+/* myBlog part */
+
+.blog-wrapper {
+  width: 80%;
+  margin: 2rem auto;
+  border: 1px solid;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.blog-box {
+  padding: 2rem;
+  border: 1px solid;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.blog-box img {
+  width: 200px;
 }
