@@ -21,11 +21,11 @@ body {
 
 header {
   width: 100%;
-  height: 5rem;
+  /* height: 5rem;
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 1; */
 }
 
 .nav-bar {
@@ -40,7 +40,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5rem 0;
+  padding: 0.6rem 0;
   border-bottom: 1px solid rgb(12, 11, 11);
 }
 
@@ -91,13 +91,35 @@ nav {
   font-size: 1.6rem;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.7);
+  position: relative;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFF;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-link:hover::before {
+  color: #eb648c;
+  visibility: visible;
+  transform: scaleX(1);
 }
 
 .intro {
-  background-image: url("images/color.jpg");
+  background-image: url("color.jpg");
   width: 100%;
-  height: 85vh;
   background-size: cover;
+  border-radius: 30px;
+  margin-top: 1rem;
+  height: calc(100vh - 6rem);
 }
 
 .intro-wrapper {
@@ -105,12 +127,96 @@ nav {
   margin: 0 auto;
 }
 
+
 .anshul img {
-  width: 40vh;
-  margin-left: 15px;
+  width: 35vh;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  top: 20px;
 }
 
 .intro-content {
   text-align: center;
+  height: 13vh;
+  line-height: 45px;
+  margin-top: 3rem;
+}
+
+/* main section start here */
+
+.about-me {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.heading {
+  margin: 2rem auto;
+  text-align: center;
+  font-size: 20px;
+}
+
+.anshul-img {
+  width: 200px;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.name {
+  color: #eb648c;
+}
+
+.skill {
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 100%;
+  font-size: 10px;
+  text-align: center;
   margin-top: 10px;
+  padding: 6px;
+}
+
+.skill-css {
+  display: block;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-image: linear-gradient(45deg, #ba0786, transparent);
+}
+
+.skill-p {
+  width: 75%;
+}
+
+.skill-v {
+  width: 85%;
+}
+
+.skill-h {
+  width: 70%;
+}
+
+.skill-js {
+  width: 60%;
+}
+
+.skill-b {
+  width: 65%;
+}
+
+.skill-shelter {
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.bs-icon {
+  background-color: #563d7c;
+  border-radius: 8px;
+}
+
+.skill-svg {
+  width: 30px;
+  margin-right: 1.1rem;
 }
