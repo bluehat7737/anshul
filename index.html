@@ -284,10 +284,81 @@
         <div class="blog-box">
           <img src="working.svg" alt="working">
           <h3>I'm working on this part of web site</h3>
+          <h4>Comming Soon...</h4>
+        </div>
+      </div>
+    </section>
+
+    <!-- comtact me form -->
+    <section id="contactMe">
+      <div class="contact-wrapper">
+        <div class="container">
+          <form action="action_page.php">
+
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="India">India</option>
+              <option value="usa">USA</option>
+            </select>
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+
+          </form>
         </div>
       </div>
     </section>
   </main>
+
+  <footer id="footer" class="footer">
+    <div class="footer-content-wrapper">
+      <div class="footer-about">
+        <h1>About</h1>
+        <p>I'm a fresher Web Engineer, so that I am available for freelancing. If you want to hire me "Click Here"</p>
+        <div class="footer-icon">
+          <a href="#">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+          <a href="#">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+          <a href="#">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </div>
+      </div>
+
+      <div class="have-a-question">
+        <h1>Have a question?</h1>
+        <p><span>
+            <ion-icon class="haq-icon" name="location-outline"></ion-icon>
+          </span> c-426, Jagatpura, Jaipur, Rajasthan, INDIA</p>
+        <p><span>
+            <ion-icon class="haq-icon" name="call-outline"></ion-icon>
+          </span> +91 797 637 0004</p>
+        <p><span>
+            <ion-icon class="haq-icon" name="mail-outline"></ion-icon>
+          </span> anshulchoursiya.unite@gmail.com</p>
+      </div>
+
+      <!-- copyright -->
+      <div class="copyright">
+        <p>
+          Copyright ©2020 All Right Reserved | This Website is made with ❤ by <a href="#">Anshul Choursiya</a>.
+        </p>
+      </div>
+    </div>
+  </footer>
 
   <script src="navbar.js"></script>
   <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
