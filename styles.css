@@ -16,7 +16,7 @@ ul {
 }
 
 body {
-  background-color: violet;
+  background-color: #f3f3f3;
 }
 
 header {
@@ -44,13 +44,13 @@ nav {
   border-bottom: 1px solid white;
 }
 
-.nav-brand {
-  width: 2rem;
+.nav-brand a ion-icon {
+  font-size: 3rem;
 }
 
 .menu-icon ion-icon {
   font-size: 3.5rem;
-  color: #fafafa;
+  color: black;
   cursor: pointer;
 }
 
